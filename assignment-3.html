@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 3</title>
+</head>
+<body>
+  <div>
+    <label for="name" >Name</label><input id="name" type="text" name="name" placeholder="Enter your Name">
+    <label for="city" >City</label><input id="city" type="text" name="city" placeholder="City">
+    <br>
+    <br>
+    <button type="button" name="button" onclick="myFunction()" id="btn">Click</button>
+  </div>
+  <br>
+  <br>
+  <div class="saw"></div>
+
+  <script>
+  // Create Two input fields for name and city and take their values and print it together on the page when the user clicks on the add button.
+  function myFunction()
+  {
+    let name = document.getElementById('name').value;
+    let city = document.getElementById('city').value;
+    document.querySelector(".saw").innerHTML=`Name: ${name} City: ${city}`;
+  }
+  </script>
+</body>
+</html>
